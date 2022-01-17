@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9d89bb858d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+      <section id="1">
+        
+      </section>
+      <section id="2">
+        <h5 style="margin:20px 0px 0px 10px;">Settings</h5>
+        <textarea id="ds" placeholder=" &#61442; Search"></textarea>
+        <ul>
+            <li><i class="fas fa-user-cog" style="color:royalblue;font-size:30px;"></i><div class="litxt">Pallavi Bhardwaj</div><div class="litxt2">pall*****@gmail.com</div><div class="cher" style="margin-top:-20px;margin-left:280px;"><i class="fas fa-chevron-right" style="color:grey;"></i></div></li>
+            <div class="divd"></div>
+            <li onclick="func1()"><i class="fas fa-adjust" style="font-size:30px;color:orange;"></i><div class="litxt" style="font-size:14px;margin-top:-24px;">Display & Brightness</div><div class="cher" style="margin-top:-20px;margin-left:280px;"><i class="fas fa-chevron-right" style="color:grey;"></i></div></li>
+            <li onclick="func2()"><i class="fas fa-images" style="color:red;font-size:30px;"></i><div class="litxt" style="font-size:14px;margin-top:-24px;">Wallpapers</div><div class="cher" style="margin-top:-20px;margin-left:280px;"><i class="fas fa-chevron-right" style="color:grey;"></i></div></li>
+             <li onclick="func3()"><i class="fas fa-exclamation-circle" style="color:lime;font-size:30px;"></i><div class="litxt" style="font-size:14px;margin-top:-24px;">About Phone</div><div class="cher" style="margin-top:-20px;margin-left:280px;"><i class="fas fa-chevron-right" style="color:grey;"></i></div></li>
+        </ul>
+    
+      </section>
+      <section id="3">
+      <div class="cont">
+       <div id="date"></div>  
+       <div id="time"></div>
+       <div id="date2" style="font-size:10px;margin-top:-5px;"></div>
+       <div id="city">Delhi | 14° C <i class="fa fa-refresh"></i></div>
+       </div>
+         <div id="search" onclick="chrome()"><div class="text"><pre> Search with Google        <i class="fa fa-microphone"></i></pre></div></div>
+         <div class="app" style="margin-top:30px;margin-left:0px">
+         <figure>
+              <button><div class="mul">
+                  
+              </div></button><figcaption style="margin-left:25px;">Google</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-T3vhLzkSXzmfOZ0slbi1qMbd-U3_qGEpbA&usqp=CAU"/></button>
+                <figcaption>Google L.</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxl5ciZxPoJfk426JKOfrSWOGGTg_Ql44AQ&usqp=CAU"/></button>
+                <figcaption>Assistant</figcaption>
+            </figure>
+            <figure>
+              <button onclick="playstore()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRqrh91oNU-g03Xkmu1_AGTdEy_B4E1NaaXg&usqp=CAU"/></button>
+                <figcaption>Play St..</figcaption>
+            </figure>
+            <figure>
+              <button onclick="settings()"><img src="https://i.pinimg.com/originals/60/c3/9d/60c39d7f1cc24db55f677b7510ea7038.png"/></button>
+                <figcaption style="margin-left:21px">Settings</figcaption>
+            </figure>
+             </div>
+             <div class="dotcont">
+             <div class="dot"></div>
+             <div class="dot1"></div>
+             <div class="dot2"></div>
+             </div>
+             <div class="app" style="margin-top:10px;margin-left:0px;">
+            <figure>
+              <button onclick="Contact()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+                <figcaption>Phone C.</figcaption>
+            </figure>
+            <figure>
+              <button onclick="Message()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+                <figcaption>Message</figcaption>
+            </figure>
+            <figure>
+              <button onclick="chrome()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+                <figcaption style="margin-left:22px;">Camera</figcaption>
+            </figure>
+             </div>
+             <div class="mult">
+             <img class="ims" src="https://i.ibb.co/vDpP1bn/IMG-20220112-092213.jpg"/>
+             <center style="font-size:10px;color:royalblue;">Google</center>
+           <div class="line">
+                 <img class="imgs" onclick="chrome()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqhN-g1a-XJE83AJhQcm6yVE7v1rp8jHuCw&usqp=CAU"/> 
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyuhVp53ylcg2eEFHHk47RJxnjPG4d-TjRYw&usqp=CAU"/>
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_05SEmBEN2HUk4LRmeANnVOcxP_wah7wdA&usqp=CAU"/> 
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TmYSdiVW8FTkqamUmP0YNMSVwTuqfkqqJw&usqp=CAU"/>
+            </div>
+            <pre><div class="textt">Google     G-Mail      Maps       GPay   </div></pre>  
+            <div class="line">
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MoERHDwbs3pM1zD_a3xrZBAbuE9HHdimew&usqp=CAU"/>
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-qZ78ktvUgbEYvqQ5gWg2uZHZy06WFRElA5mwOJ8Utrf2Xt8N&s"/> 
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAEIgG2V_bTZ7Mq4x3zNP8znEnnLHgF-jWs9BKRu8_rMQ1H3o9W6Henny&s=10"/> 
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PEJnvGlygA-O0_eXCY9DI2k_GlxsNKdMwqK3Bx4CFrf9YsAxCY1LUmY&s=10"/>
+                <pre><div class="textt">YouTube     Drive     Movies     Calender</div></pre>
+              </div>
+              <div class="line">
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYnrBcrFEXeXtJHJWF5gWrI9oLw76-QFyGDsSHes1NI05kYXPPC2Sc8vj&s=10"/> 
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShyYhzqGH69euiutDZ79CZ5OoRXczuHfa0dVLzWSCfi6w8fCnCSPJqWOKD&s=10"/> 
+                <img class="imgs" src="https://www.gstatic.com/subscriptions/img/logo_one_108px_d9958cde481d1e76551438f913cdcf41.svg"/>                          
+                <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qpV0mV2ILgYR8BnOYFxl3OMiKZgNuhG5llSohoi1eRwXLbrYnK2--fc&s=10"/>
+        </div>
+        <pre><div class="textt">Photos      Files     G• One       Duo  </div></pre>
+        </div>
+      </section>
+      
+        <section id="4">
+        <div class="app" style="margin-top:5px;">
+            <figure>
+                 <button onclick="calculator()" style="margin-top:7px;"><img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png" style="background:#fff;"/></button>
+                <figcaption>Calculator</figcaption>
+            </figure>
+            <figure>
+                <button onclick="music()" style="margin-top:7px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFbOEPmcBTp-IDCVSMBXTLqJ1Z1gRUIFUO19SdomGROclYNVZWu_JzvCU&s=10"/></button>
+                <figcaption style="margin-left:25px">Music</figcaption>
+            </figure>
+            <figure>
+                <button style="margin-top:7px;"><img src="https://static-cse.canva.com/pages/brand-guidelines/v2/app_icon_round.png"/></button>
+                <figcaption style="margin-left:23px">Canva</figcaption>
+            </figure>   
+            </figure>
+            <figure>
+                <button style="margin-top:7px;"><img src="https://iconape.com/wp-content/files/hk/93955/png/sololearn-2.png" style="background:#fff;border:solid 5px #fff;border-radius:50%;"/></button>
+                <figcaption>Sololearn</figcaption>
+            </figure>
+            <figure>
+              <button style="margin-top:7px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSuRHW7Sy7yLcKeoCiqp4yYqQfVEWG5keIw&usqp=CAU"/></button>
+                  <figcaption>File•Manger</figcaption>
+              </button>  
+            </figure>                  
+           </div>
+        <div class="app">
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1lbXm3dUGWiVKPLAPRA8glwLUYdx2N38KKfTzGuzSVQKlzQbcTcjI5BL&s=10"/></button>
+                <figcaption style="margin-left:24px;">Github</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgSQpD5fO-3nvc1mlkKLWkzoJpm_SeHXmRyKosXxZQeoNGRBhfd9gP35rp&s=10"/></button>
+                <figcaption style="margin-left:20px;">Dropbox</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://i.ibb.co/G9QMtNJ/IMG-20220110-191307.jpg"/></button>
+                <figcaption style="margin-left:30px;">Rar</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv60YXXf2IGwmuLgzwrr-kBTUdfeLRhtW2gQ&usqp=CAU"/></button>
+                <figcaption>Tor Brow..</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://cdn.pixabay.com/photo/2019/10/16/09/05/utorrent-4553905_1280.png"/></button>
+                <figcaption style="margin-left:21px;">utorrent</figcaption>
+            </figure>
+             </div>
+             <div class="app">
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaQICddLk32bojzfyXMy8mumGzFw0kF-YZA&usqp=CAU"/></button>
+                <figcaption style="margin-left:25px;">Acode</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNau4Z5Ry_KnMVR2IBSjKFGx2rCAYVb3viw&usqp=CAU"/></button>
+                <figcaption style="margin-left:23px;">Pydroid</figcaption>
+            </figure>
+            <figure>
+              <button onclick="whatsapp()"><img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Whats_App-512.png"/></button>
+                <figcaption>WhatsApp</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png"/></button>
+                <figcaption>Telegram</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"/></button>
+                <figcaption>Facebook</figcaption>
+            </figure>
+             </div>
+            <div class="app">
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7k50LcBON966Y6KLMH0bAYhj0Yp8emSeFw&usqp=CAU"/></button>
+                <figcaption>Instagram</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTePYDejfSIrQf-WCKlYiRjwKkmomXuiQOk5Q&usqp=CAU"/></button>
+                <figcaption style="margin-left:22px;">Discord</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png"/></button>
+                <figcaption style="margin-left:23px;">Twitter</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png"/></button>
+                <figcaption style="margin-left:25px;">Reddit</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4IUkTHTaNT1f7MXrBHqH0-Myvn9DakmFHlQ&usqp=CAU"/></button>
+                <figcaption style="margin-left:24px;">Udemy</figcaption>
+            </figure>
+             </div>
+            <div class="app">
+            <figure>
+              <button><img src="https://s3.amazonaws.com/assets.materialup.com/users/pictures/000/028/581/thumb/syFSpLD0_400x400.jpg?1507620807"/></button>
+                <figcaption>Snapchat</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://cdn2.iconfinder.com/data/icons/social-media-icons-23/800/linkedin-512.png"/></button>
+                <figcaption style="margin-left:21px">Linkedin</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/2048px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png"/></button>
+                <figcaption>MicrosoftOffice</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfWetyTJR8jPMscg8TRsZV8ity39R5oxX_Q&usqp=CAU"/></button>
+                <figcaption style="margin-left:21px;">Amazon</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetkaDZDmxgAu0UkO9Uae4V6A3SinP_Ve9Nw&usqp=CAU"/></button>
+                <figcaption style="margin-left:22px;">Flipkart</figcaption>
+            </figure>
+             </div>
+            <div class="app">
+            <figure>
+              <button><img src="https://i.ibb.co/L90p7dM/pinterest-logo-icon-3198.png"/></button>
+                <figcaption>Pinterest</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjbiXts7FZLiJSrFjGuHhpILr3iIttrr5zw&usqp=CAU"/></button>
+                <figcaption>Brave Br..</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyrAzrVshexSci6yDl3595lK2w5SoWWnrRw&usqp=CAU"/></button>
+                <figcaption style="margin-left:22px;">Spotify</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://www.wizcase.com/wp-content/uploads/2020/01/VLC-LOGO.png"/></button>
+                <figcaption>VLC Pla..</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlWI-9ZQKs4mgbFbXeqT_Pr9-2s_ZpCizow&usqp=CAU"/></button>
+                <figcaption>Amazon•Music</figcaption>
+            </figure>
+             </div>
+            <div class="app">
+            <figure>
+              <button><img src="https://image.apktoy.com/img/49/net.one97.paytm/icon.png"/></button>
+                <figcaption style="margin-left:24px;">Paytm</figcaption>
+            </figure>
+            <figure>
+              <button onclick="chess()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrefAnycxGjrRRmNEcOcUk8p3bFDT3KcOQVQ&usqp=CAU"/></button>
+                <figcaption>Real Ch..</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5xGWuTO-OsbMymzOyXHEYS2CdKOKE3N98g&usqp=CAU"/></button>
+                <figcaption>Candy C..</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1498ryqpdPFq21rZh83rJL4Dlr6Tq96Mug&usqp=CAU"/></button>
+                <figcaption>Subway S</figcaption>
+            </figure>
+            <figure>
+              <button onclick="templerun()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ12i2ZWA1NJEcjX3FV0eAaerpfnoXjP78sA&usqp=CAU"/></button>
+                <figcaption>Temple R</figcaption>
+            </figure>
+             </div>
+             <div class="dotcont">
+             <div class="dot"></div>
+             <div class="dot1"></div>
+             <div class="dot2"></div>
+             </div>
+            <div class="app" style="margin-top:10px">
+            <figure>
+              <button onclick="Contact()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+                <figcaption>Phone C.</figcaption>
+            </figure>
+            <figure>
+              <button onclick="Message()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+                <figcaption>Message</figcaption>
+            </figure>
+            <figure>
+              <button onclick="chrome()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+                <figcaption style="margin-left:20px;">Camera</figcaption>
+            </figure>
+             </div>
+        </section>
+        <section id="5">
+            <div class="app" style="margin-top:12px;">
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxojsjDe22tatCGLn_kEEn9jZ_J0hxCunbg&usqp=CAU"/></button>
+                <figcaption>Amazon•Prime•Video</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://www.apkmirror.com/wp-content/uploads/2020/10/88/5f935a3c9a230-384x384.png"/></button>
+                <figcaption style="margin-left:23px;">Hotstar</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYnuDXe38tPQdEeGs-Fp2iiSIjVhLSn01Yw&usqp=CAU"/></button>
+                <figcaption>Amazon•Kindle</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShteXNbut2b6EE4dRRxnpqRdqIB6-icMbxJQ&usqp=CAU"/></button>
+                <figcaption>YT Music</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSup7yY5kXvaxpi-mqDxnGtGKAT0MlLBSZDZg&usqp=CAU"/></button>
+                <figcaption>Zoom Cl.</figcaption>
+            </figure>
+             </div>
+            <div class="dotcont" style="margin-top:420px">
+             <div class="dot"></div>
+             <div class="dot1"></div>
+             <div class="dot2"></div> 
+             </div>
+             <div class="app" style="margin-top:10px;margin-left:0px;">
+            <figure>
+              <button onclick="Contact()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+                <figcaption>Phone C.</figcaption>
+            </figure>
+            <figure>
+              <button onclick="Message()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+                <figcaption>Message</figcaption>
+            </figure>
+            <figure>
+              <button onclick="chrome()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+            </figure>
+            <figure>
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+                <figcaption style="margin-left:20px;">Camera</figcaption>
+            </figure>
+             </div>
+        </section>
+        <section id="6">           
+           <div id="dtp" class="dtop"><button id="dbtn2" class="dbutton" onclick="bk()">←</button> Display & Brightness</div> 
+           <figure>
+           <div class="lgtmob" onclick="shift1()">
+               <div class="dsptm" onclick="shift1()">19:30</div>
+               <div class="dspbox" onclick="shift1()"></div>
+           </div>
+           <figcaption class="figcaption" onclick="shift1()">Light</figcaption>
+           </figure>
+           <figure>
+           <div class="drkmob" onclick="shift2()">
+               <div class="dsptm">19:30</div>
+               <div class="dspbox" style="background-color:rgb(0,0,0,0.5);"></div>
+           </div><figcaption class="figcaption" onclick="shift2()" style="margin-left:205px">Dark</figcaption>
+           </figure>
+  <div id="dsmdl" class="dspmdl"><i class="far fa-circle" onclick="shift1()" style="margin-left:60px;color:grey;"></i>
+      <i class="fas fa-dot-circle" onclick="shift2()" style="margin-left:110px;color:royalblue;"></i>
+  </div>
+  <font style="font-size:20px;margin-left:5px;">Brightness</font>
+  <div class="boxcontainer">
+      <div class="brightness-box">
+        <i class="fas fa-sun"></i>
+        <input type="range" id="range" min="70" max="120" value="100">
+      </div>
+    </div>
+     <script>
+      rangeInput = document.getElementById('range');
+      container = document.getElementsByClassName('container')[0];
+
+      rangeInput.addEventListener("change",function(){
+        container.style.filter = "brightness(" + rangeInput.value + "%)";
+      });
+    </script>
+        </section>
+        <section id="7">
+        <div id="dtp" class="dtop"><button id="dbtn" class="dbutton" onclick="bk()">←</button>Customize</div>
+            <div class="logtop"><i class="fab fa-sketch" style="font-size:60px;background: linear-gradient(to bottom,red 0%, orange 100%);-webkit-background-clip: text;-webkit-text-fill-color:transparent;top:20px"></i><div class="logo">allpapers</div>
+                <img src="https://www.freepnglogos.com/uploads/w-letter-logo-png/w-letter-letter-designed-musiquedesign-brandcrowd-20.png" style="height:80px;width:80px;border:none;box-shadow:none;margin-top:-10px;margin-left:-210px;z-index:1;"/>
+            </div>
+            <font style="font-size:20px">Smooth ≻</font>
+            <div class="boxed">
+                <button onclick="walsmooth1()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsc3Hz_xEzJ05dIsdZDuwcZR-HByk4mHyYPw&usqp=CAU"/></button>
+                <button onclick="walsmooth2()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsHVausqOjUR_uxJbYYN806xNCrtLHGzrmw&usqp=CAU"/></button>
+                <button onclick="walsmooth3()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXZ0pT7FHyyrZnkUfPOFqrHYznHRbE5uYug&usqp=CAU"/></button>
+                <button onclick="walsmooth4()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwWFYf2HMvvrSDGyLdGTTsXuG6kFL0qquHQ&usqp=CAU"/></button>
+                <button onclick="walsmooth5()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLUl_9UQ6w8udEKiAY0jjo06MWyT-0AqIpqw&usqp=CAU"/></button>
+                <button onclick="walsmooth6()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4iY1K6iyJ07QVKwdjJXzEkjL7NAE5RwE28g&usqp=CAU"/></button>
+                <button onclick="walsmooth7()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50gJuI7unFRbSl-w9lRzMOMIh7NZLKbKTbQ&usqp=CAU"/></button>
+                <button onclick="walsmooth8()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTf1moyzdrOW6_IC5SzPCIxNbc8RBheirCyQ&usqp=CAU"/></button>
+                <button onclick="walsmooth9()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKUMjaW_YVhR8SQdIqfvWgtfnjc_Tr-Cmbw&usqp=CAU"/></button>
+                <button onclick="walsmooth10()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGj35Gf3T52M5Puqc8DiHjgcdbjaSIZ3iFhA&usqp=CAU"/></button>
+            </div>
+            
+            <font style="font-size:20px">Nature ≻</font>
+            <div class="boxed">
+                <button onclick="walnature1()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiIJz8DPDvJN53rC9xVob5-M2gvdSlAsP7qg&usqp=CAU"/></button>
+                <button onclick="walnature2()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVNvhCPTZUgP4rn3n3RwbdcATb6PeF4DFOzA&usqp=CAU"/></button>
+                <button onclick="walnature3()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXvql-qSEUox0iDof1CZes9R-lDBkICsJwg&usqp=CAU"/></button>
+                <button onclick="walnature4()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKz0EEgoBhaicvScG_DeXBWlQcj-ScZUeO4g&usqp=CAU"/></button>
+                <button onclick="walnature5()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnKONXdySw246Xn9mL2cqhjEIxP1h6D5QRg&usqp=CAU"/></button>
+                <button onclick="walnature6()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXKMqSo7LHQB5oah9HDVc068L02oVLpY2Uw&usqp=CAU"/></button>
+                <button onclick="walnature7()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Q0RthIKlwirDiI29vMIUOhTMGd7wgaJ0ZA&usqp=CAU"/></button>
+                <button onclick="walnature8()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoF_JNZVqoBrJbxsuW4zavL9jq3ChUE2V4SA&usqp=CAU"/></button>
+                <button onclick="walnature9()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZHdB8zDOfC_trGWgyeIl7AlLsTeOp11Ym5w&usqp=CAU"/></button>
+                <button onclick="walnature10()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8OlZd-dc-WAINZfpTXfjz3sRDuQiB433ABA&usqp=CAU"/></button>
+            </div>
+            
+        <font style="font-size:20px">Monuments ≻</font>
+            <div class="boxed">
+                <button onclick="walmonuments1()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5CM2YnnuijaUl4t4w_oTTz0MLH_G4pWqZQw&usqp=CAU"/></button>
+                <button onclick="walmonuments2()"><img class="boximg" src="https://wallpapercave.com/wp/wp6089366.jpg"/></button>
+                <button onclick="walmonuments3()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJZSFtcx8_aFHc5t319x3If_Qbnf8MudNnQ&usqp=CAU"/></button>
+                <button onclick="walmonuments4()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0LBrVq1UNyP0obJtO5rX3R1aWp77a2_AVSA&usqp=CAU"/></button>
+                <button onclick="walmonuments5()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSkOFC77kfohWmAlEt3ZWhUpBmlMhTx-nxg&usqp=CAU"/></button>
+                <button onclick="walmonuments6()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm5J17mH_wYsNxT4y2EjkZWUNNb6SVJ3BRQ&usqp=CAU"/></button>
+                <button onclick="walmonuments7()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEQGSdHpdT2vBsJ-Drd1aD_YdIaDaF9ZerQ&usqp=CAU"/></button>
+                <button onclick="walmonuments8()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDpTA_Cb5GWfN_k3NjAGci69l_KxhrWhvacQ&usqp=CAU"/></button>
+                <button onclick="walmonuments9()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPO_V24cmnB9A3dp9-RWAmz51RNctS0-E9uQ&usqp=CAU"/></button>
+                <button onclick="walmonuments10()"><img class="boximg" src="https://wallpapercave.com/wp/wp6089267.jpg"/></button>
+            </div>
+            
+            <font style="font-size:20px">Technology ≻</font>
+            <div class="boxed">
+                <button onclick="waltech1()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Ql2LGehgPlZ2KhGBPR1c9UAw6OjJZWfXDQ&usqp=CAU"/></button>
+                <button onclick="waltech2()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK_fTSXcj2EkG4cIYHVbTl5cYyFnzgRn597Q&usqp=CAU"/></button>
+                <button onclick="waltech3()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2CL_Xoc1kCK1sLO0w4DMhyn-ZZNtGQo3rg&usqp=CAU"/></button>
+                <button onclick="waltech4()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQMRWBiwSFnfb5W4Ub4gZmw4QrWdLYgG1PQ&usqp=CAU"/></button>
+                <button onclick="waltech5()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BnMDCUw3N00-dsXtH8gA9XkpKpbMs0olTA&usqp=CAU"/></button>
+                <button onclick="waltech6()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-dO41WVFCYmMUbx4F85Pl6L5XGc4m1_2XQ&usqp=CAU"/></button>
+                <button onclick="waltech7()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6sckKwYPGs5yQzkVwByvU0hr4vO3w2EeHw&usqp=CAU"/></button>
+                <button onclick="waltech8()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20qda71qhxU3DXcvaKfIIs1lmT9J79QpSmg&usqp=CAU"/></button>
+                <button onclick="waltech9()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLz8cOM-rJbTnH4sc_Xfq7DFiYh2om1ihDwQ&usqp=CAU"/></button>
+                <button onclick="waltech10()"><img class="boximg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi1OU-ILtHRwjNpR_EjeroQK0V1O01vLzTMg&usqp=CAU"/></button>
+            </div>
+        </section>
+        <section id="8">
+            <div id="dtp" class="dtop"><button id="dbtn3" class="dbutton" onclick="bk()">←</button> About Phone</div>
+            <script>
+function getIP(json) {
+
+var ipad = json.ip;
+link = "https://ipapi.co/"+ipad+"/json/"
+$.getJSON(link, function(data) {
+function androidV(ua) { 
+   ua = (ua || navigator.userAgent).toLowerCase();  
+   var match = ua.match(/android\s([0-9\.]*)/i); 
+   return match ? match[1] : undefined; 
+};          document.getElementById("customers").innerHTML = '<tr><th>About</th><th>Information</th></tr><tr><td>Android Version</td><td>'+ androidV() +'</td><tr><td>IP Adress</td><td>'+ data.ip +'</td></tr><tr><td>Country</td><td>'+ data.country_name+'</td></tr><tr><td>Region</td><td>'+ data.region +'</td></tr><tr><td>City</td><td>'+ data.city +'</td></tr><tr><td>Country Capital</td><td>'+ data.country_capital +'</td></tr><tr><td>Postal Code</td><td>'+ data.postal +'</td></tr><tr><td>Latitude</td><td>'+ data.latitude +'</td></tr><tr><td>Longitude</td><td>'+ data.longitude +'</td></tr><tr><td>TimeZone</td><td>'+ data.timezone +'</td></tr><tr><td>Phone Code</td><td>'+ data.country_calling_code +'</td></tr><tr><td>Currency</td><td>'+ data.currency_name +'</td></tr><tr><td>ISP</td><td>'+ data.org +'</td></tr>';
+    });
+}
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+     <table id="customers">         
+     </table>
+        </section>
+        <section id="9">
+            <textarea placeholder=" &#61442; Search numbers or names" style="height:40px;padding-top:10px;background-color:rgb(0,0,0,0.6);"></textarea>
+            <div class="contacts">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEw9SbR0vDPRlODfN41Dcy0e8AbmUI_CouA&usqp=CAU"/> <div class="nmtxt">Elon Musk</div><div class="nrtxt">+14 1346234678<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpZ9RrCN8DT9p2VGJcVaEVYrwIsfkB88W6g&usqp=CAU"/> <div class="nmtxt">Jeff Bezos</div><div class="nrtxt">+11 1235367343<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XdGM-zvmxUE-wQpPuufGJGgVsD8YUQ42yw&usqp=CAU"/> <div class="nmtxt">Bill Gates</div><div class="nrtxt">+12 1865678774<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ktaNss9DlesBHeqAfqbWYxcUiC6vRz8TEQ&usqp=CAU"/> <div class="nmtxt">Mark Zukerberg</div><div class="nrtxt">+56 1246666433<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwin6nBbOkp8L2WE3EISw8bPz5mY6Faw6vog&usqp=CAU"/> <div class="nmtxt">Joe Biden</div><div class="nrtxt">+34 1945367858<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OUdDtu8JTMSXiEt5TmiIlqceBXWvJTP6rQ&usqp=CAU"/> <div class="nmtxt">Narendra Modi</div><div class="nrtxt">+91 7896368783<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQXjHM-JSzeMYhYtOuglvpXFxvpQbGLJQpg&usqp=CAU"/> <div class="nmtxt">Rolando</div><div class="nrtxt">+12 6854437556<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbk9FIm1HwsMwGt4KUuCSZpK1vzgHGCc11Mg&usqp=CAU"/> <div class="nmtxt">Mukesh Ambani</div><div class="nrtxt">+91 7654789034<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYxQnt-upQhX5Qgu2vRwOdScFYoCoy9HPxA&usqp=CAU"/> <div class="nmtxt">Sharukh Khan</div><div class="nrtxt">+91 9053222563<i id="call" class="fas fa-phone-alt"></i></div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LSdLrrFub2meds6iBjG8BuCv5dUHmsIcMA&usqp=CAU"/> <div class="nmtxt">Tony Stark</div><div class="nrtxt">+62 1045367853<i id="call" class="fas fa-phone-alt"></i></div>
+       <footer>
+         <button class="but1">
+           <i class="fa" style="color:gold;">&#xf005;</i>
+         </button>
+         <button class="but1" style="background:#343434;">
+            <i class="fa" style="color:royalblue;">&#xf0c0;</i>
+         </button>
+         <button class="but1" onclick="show()">
+             <i class="fa" style="color:#DC143C;">&#xf00a;</i>
+         </button>
+       </footer>     
+     <iframe class="iframe" id="callbooth" src="https://pallaviqueen.github.io/dialpad/" style="height:8000px;display:none;">X</iframe>
+       <div id="cut" class="cancel"><button onclick="hide()">❌</button></div>
+            </div>
+            
+        </section>
+        <section id="10">
+        <div id="dtp" class="dtop" style="font-family:Fontawesome;"><button id="dbtn2" class="dbutton" onclick="bk()">←</button> Calculator &#xf1ec;</div>
+            <iframe class="iframe2" style="height:350px;" src="https://pallaviqueen.github.io/calculator/"></iframe>
+        </section>
+        <section id="11">
+        <div class="chrometop">
+            <i class="fa" style="margin-left:7px;">&#xf015;</i>
+          <div class="clogo"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnJcqu0B60KDS1dT4H4lT5qsqqzDt9M-8iA&usqp=CAU" style="height:25px;width:25px;margin-left:173px;margin-top:-20px;"/></div>
+           <div class="ctab">1</div>
+          <div class="clogo"><i class="fa" style="margin-top:-32px;margin-left:250px;" onclick="chrmshow()">&#xf142;</i></div>
+          <div class="clogo">
+        </div>
+        <div class="google-logo">Googl<div class="e">e</div></div>
+        <textarea placeholder="  Search or type web address          &#xf130;    &#xf030;" style="height:40px;padding-top:10px;background-color:#343434;border-radius:20px;color:rgb(255,255,255,0.9);border:none;"></textarea>
+    <div class="recomend">
+       <div class="recom-1">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"/>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkc5s7IKM4SP_RLRuHDKrOI2bqjFU2ExzR2A&usqp=CAU"/>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9puZSGkrnOgeAaMXlm3nVFs4maZImlHiiA&usqp=CAU"/>
+           <div class="wbnm"><pre>         Facebook          Instagram           Dropbox</pre></div>
+       </div>
+        <div class="recom-1">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1lbXm3dUGWiVKPLAPRA8glwLUYdx2N38KKfTzGuzSVQKlzQbcTcjI5BL&s=10"/>
+           <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png"/>
+           <img src="https://i.ibb.co/L90p7dM/pinterest-logo-icon-3198.png"/>
+           <div class="wbnm"><pre>          Github             Reddit            Pinterest</pre></div>
+        </div>
+       </div>
+       <pre style="font-size:12px;font-weight:1000;font-family:Fontawesome;color:rgb(255,255,255,0.8);"> Discover                                                                              &#xf013;</pre>
+        <div class="discover">
+        <div class="disarticle">
+           <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/12/10/a32e4aa8e4749a6af085a740a7dc7f41_original.png?impolicy=abp_images&imwidth=720" />
+         <p>Dogecoin value 2022: Why did Elon Musk try to make the cryptocurrency's value rise?</p>
+         <pre> <i class="fab" style="color:red;height:13px;width:13px;background:#fff;">&#xf3c7;</i> MARCA •2h                                                          &#xf1e0;   &#xf142;</pre>
+        </div><hr>
+        <div class="disarticle">
+           <img src="https://www.analyticsinsight.net/wp-content/uploads/2022/01/10-Platforms-to-Get-Datasets-for-Data-Science-Projects-in-2022-300x167.jpg" />
+         <p>10 PLATFORMS TO GET DATASETS FOR DATA SCIENCE PROJECTS IN 2022</p>
+         <pre> <i class="fas" style="color:orange;height:13px;width:13px;background:#fff;">&#xf05b;</i> Analytics Insights •3h                                        &#xf1e0;   &#xf142;</pre>
+        </div><hr>
+        <div class="disarticle">
+           <img src="https://blog.logrocket.com/wp-content/uploads/2022/01/Using-console-colors-Node-js.png" />
+         <p>Using console colors with Node.js</p>
+         <pre> <i class="fas" style="color:green;height:13px;width:12px;background:#fff;">&#xf5d2;</i> Devop •5h                                                            &#xf1e0;   &#xf142;</pre>
+        </div><hr>
+        <div class="disarticle">
+           <img src="https://venturebeat.com/wp-content/uploads/2022/01/GettyImages-1347040940.jpg?w=750&strip=all" />
+         <p>The future of robotics</p>
+         <pre> <i class="fas" style="color:royalblue;height:13px;width:12px;background:#fff;">&#xf6ad;</i> Venturebeat •6h                                                 &#xf1e0;   &#xf142;</pre>
+        </div><hr>
+        <div class="disarticle">
+           <img src="https://www.webdesignerdepot.com/cdn-origin/uploads/2022/01/2022-768x422.jpg" />
+         <p>5 Big Web Design Predictions for 2022</p>
+         <pre> <i class="fas" style="color:GoldenRod;height:13px;width:12px;background:#fff;">&#xf51e;</i> Web Designer •6h                                               &#xf1e0;   &#xf142;</pre>
+        </div><hr>
+        <div class="disarticle">
+           <img src="https://images.indianexpress.com/2022/01/IIT-Delhi-1200-1-1.jpeg?w=389" />
+         <p>IIT-D to set up office to ‘celebrate diversity and foster inclusivity’</p>
+         <pre> <i class="fas" style="color:Violet;height:13px;width:12px;background:#fff;">&#xf5cb;</i> India Today •6h                                                  &#xf1e0;   &#xf142;</pre>
+        </div>
+
+    </div>
+       <div class="more-options" id="ooo">
+            <div class="moption" style="background:rgb(0,0,0,0.2);width:100%;margin-left:0px;font-size:21px;"><pre style="font-family:Fontawesome;"> &#xf061;    &#xf005;    &#xf019;     &#xf05a;</pre><pre id="chrmhd" onclick="chrmhide()" style="font-family:Fontawesome;">   &#xf057;</pre></div>
+            <div class="moption">&#xf0fe; New tab</div>
+            <div class="moption">&#xf21b; New incognito tab</div>
+            <div class="moption">&#xf005; Bookmarks</div>
+            <div class="moption">&#xf26c; Recent tabs</div>
+            <div class="moption">&#xf1da; History</div>
+            <div class="moption">&#xf019; Downloads</div>
+            <div class="moption">&#xf1e0; Share</div>
+            <div class="moption">&#xf013; Settings</div>
+            <div class="moption">&#xf059; Help & feedback</div>
+        </div>
+    </div>       
+        </section>
+        <section id="12">
+            <iframe src="https://pallaviqueen.github.io/whatsapplgt/" style="height:100%;width:300px;border:none;outline:none;"></iframe>
+        </section>
+        <section id="13">
+            <div class="playstore">
+                 <pre style="font-family:Fontawesome;"> &#61442; Search for apps &...                 &#xf130;     <div class="playuser">&#xf032;</div></pre>
+            </div>
+            <div class="playtop">
+                <button class="pbutton" style="color:rgb(41,171,135);border-bottom:solid 4px rgb(41,171,135);min-width:80px;">For you</button> 
+<button class="pbutton" style="min-width:85px;">Top charts</button>
+<button class="pbutton" style="min-width:70px;">Kids</button>
+<button class="pbutton" style="min-width:70px;">Events</button>
+<button class="pbutton" style="min-width:70px;">Premium</button>
+<button class="pbutton" style="min-width:80px;">Categories</button>
+<button class="pbutton" style="min-width:100px;">Editor's Choice</button>
+            </div><hr style="margin-top:0px;">
+            <div class="pbox">
+               <img  src="https://i.ibb.co/z4rm7FP/IMG-20220117-143152.jpg"/>
+                <img src="https://i.ibb.co/tc2xSK1/IMG-20220117-135611.jpg"/>
+                <img src="https://i.ibb.co/2ybyMHh/IMG-20220117-135528.jpg"/>
+                <img src="https://i.ibb.co/TWsC2SB/IMG-20220117-135503.jpg"/>
+                <img src="https://i.ibb.co/Nss2bfv/IMG-20220117-135639.jpg"/>
+            </div>
+            <pre style="font-size:16px;font-family:arial;color:silver;">  Discover Recomended Games              ➔</pre>
+            <div class="appbox">
+                <div class='papp'><img src='https://i.ibb.co/zxcFJwm/IMG-20220117-160644.jpg'/><img class='papplogo' src='https://i.ibb.co/VqsKmZc/IMG-20220117-164000.jpg'/>                  
+                </div>
+                <div class='papp'><img src='https://i.ibb.co/7t0TZnP/IMG-20220117-160528.jpg'/><img class='papplogo' src='https://i.ibb.co/4Y6gn0S/IMG-20220117-163937.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/XzjBGCM/IMG-20220117-162239.jpg'/><img class='papplogo' src='https://i.ibb.co/vPVs7GS/IMG-20220117-163915.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/THscKsG/IMG-20220117-162217.jpg'/><img class='papplogo' src='https://i.ibb.co/Zx43QSL/IMG-20220117-163833.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/XJ6yRD1/IMG-20220117-162153.jpg'/><img class='papplogo' src='https://i.ibb.co/ygGssdD/IMG-20220117-163758.jpg'/></div>                
+            </div>
+            
+            <pre style="font-size:16px;font-family:arial;color:silver;">  Suggested for you                                   ➔</pre>
+            <div class="appbox">
+                <div class='papp'><img src='https://i.ibb.co/wS1Q3pf/IMG-20220117-174212.jpg'/><img class='papplogo' src='https://i.ibb.co/Tw3gs0F/IMG-20220117-180345.jpg'/>                  
+                </div>
+                <div class='papp'><img src='https://i.ibb.co/yWzw0md/IMG-20220117-174159.jpg'/><img class='papplogo' src='https://i.ibb.co/5YrjWh9/IMG-20220117-180327.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/nkMwHV2/IMG-20220117-174130.jpg'/><img class='papplogo' src='https://i.ibb.co/H27rnfX/IMG-20220117-180305.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/V9Mxkm1/IMG-20220117-174142.jpg'/><img class='papplogo' src='https://i.ibb.co/NpMp2T2/IMG-20220117-180240.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/YXZTFVr/IMG-20220117-174228.jpg'/><img class='papplogo' src='https://i.ibb.co/crypQfZ/IMG-20220117-180201.jpg'/></div>                
+            </div>            
+            <pre style="font-size:16px;font-family:arial;color:silver;">  Trending Games                                       ➔</pre>
+            <div class="appbox">
+                <div class='papp'><img src='https://i.ibb.co/zxcFJwm/IMG-20220117-160644.jpg'/><img class='papplogo' src='https://i.ibb.co/VqsKmZc/IMG-20220117-164000.jpg'/>                  
+                </div>
+                <div class='papp'><img src='https://i.ibb.co/7t0TZnP/IMG-20220117-160528.jpg'/><img class='papplogo' src='https://i.ibb.co/4Y6gn0S/IMG-20220117-163937.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/XzjBGCM/IMG-20220117-162239.jpg'/><img class='papplogo' src='https://i.ibb.co/vPVs7GS/IMG-20220117-163915.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/THscKsG/IMG-20220117-162217.jpg'/><img class='papplogo' src='https://i.ibb.co/Zx43QSL/IMG-20220117-163833.jpg'/></div>
+                <div class='papp'><img src='https://i.ibb.co/XJ6yRD1/IMG-20220117-162153.jpg'/><img class='papplogo' src='https://i.ibb.co/ygGssdD/IMG-20220117-163758.jpg'/></div>                
+            </div>
+            <pre> </pre>
+            <footer style="position:absolute;margin-top:-300px;z-index:199;">
+            <pre style="font-family:Fontawesome;color:silver;font-size:30px;"><font style="color:rgb(41,171,135);font-family:Fontawesome;">&#xf11b;</font>     &#xf009;      &#xf008;     &#xf02d;</pre>
+            </footer>
+        </section>
+        <section id="14">
+            <textarea placeholder=" &#61442; Search numbers or names" style="height:40px;padding-top:10px;background-color:rgb(0,0,0,0.6);"></textarea>
+           <div class="contacts">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEw9SbR0vDPRlODfN41Dcy0e8AbmUI_CouA&usqp=CAU"/> <div class="nmtxt">Elon Musk</div><div class="nrtxt" style="margin-top:0px;">I will change the world 😎</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpZ9RrCN8DT9p2VGJcVaEVYrwIsfkB88W6g&usqp=CAU"/> <div class="nmtxt">Jeff Bezos</div><div class="nrtxt" style="margin-top:0px;">Good Morning 🌄</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XdGM-zvmxUE-wQpPuufGJGgVsD8YUQ42yw&usqp=CAU"/> <div class="nmtxt">Bill Gates</div><div class="nrtxt" style="margin-top:0px;">Donation is best thing...</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ktaNss9DlesBHeqAfqbWYxcUiC6vRz8TEQ&usqp=CAU"/> <div class="nmtxt">Mark Zukerberg</div><div class="nrtxt" style="margin-top:0px;">I will eat everyone's privacy</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwin6nBbOkp8L2WE3EISw8bPz5mY6Faw6vog&usqp=CAU"/> <div class="nmtxt">Joe Biden</div><div class="nrtxt" style="margin-top:0px;">We want peace...</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OUdDtu8JTMSXiEt5TmiIlqceBXWvJTP6rQ&usqp=CAU"/> <div class="nmtxt">Narendra Modi</div><div class="nrtxt" style="margin-top:0px;">Congrates 🥳</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQXjHM-JSzeMYhYtOuglvpXFxvpQbGLJQpg&usqp=CAU"/> <div class="nmtxt">Rolando</div><div class="nrtxt" style="margin-top:0px;">Yes ofcourse!!</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbk9FIm1HwsMwGt4KUuCSZpK1vzgHGCc11Mg&usqp=CAU"/> <div class="nmtxt">Mukesh Ambani</div><div class="nrtxt" style="margin-top:0px;">I am doing someother work...</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYxQnt-upQhX5Qgu2vRwOdScFYoCoy9HPxA&usqp=CAU"/> <div class="nmtxt">Sharukh Khan</div><div class="nrtxt" style="margin-top:0px;">Great work pallavi 👍🏻</div>
+            </div>
+            <div class="divd"></div>
+            <div class="contacts">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LSdLrrFub2meds6iBjG8BuCv5dUHmsIcMA&usqp=CAU"/> <div class="nmtxt">Tony Stark</div><div class="nrtxt" style="margin-top:0px;">Nice Keep it up...</div>
+        </section>
+        
+        <section id="15">
+            <iframe class="iframe2" src="https://kartiktharad.github.io/Music-Player/Single%20Playlist%20Screen.html"></iframe>
+        </section>
+        
+        <section id="16">
+            <iframe class="iframe2" src="https://fritz.chessbase.com" style="width:100%;height:100%;"></iframe>
+        </section>
+        
+        <section id="17">
+            <iframe class="iframe2" src="https://pallaviqueen.github.io/templerun/" style="width:100%;height:100%;"></iframe>
+        </section>
+        <section id="18">
+            <iframe class="iframe2" src="https://fritz.chessbase.com" style="width:100%;height:100%;"></iframe>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
